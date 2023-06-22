@@ -28,8 +28,8 @@ jobs:
 
       - name: Run deploy script
         env:
-          BOT_NAME: ${{ secrets.BOT_NAME }}
-          BOT_PASS: ${{ secrets.BOT_PASS }}
+          BOT_NAME: ${{ secrets.DEPLOY_XIPLUS_BOT_NAME }}
+          BOT_PASS: ${{ secrets.DEPLOY_XIPLUS_BOT_PASS }}
         run: |
           echo "('Xiplus', BotPassword('${BOT_NAME}', '${BOT_PASS}'))" > user-password.py
           chmod 600 user-config.py user-password.py
