@@ -15,8 +15,8 @@ jobs:
       - uses: xiplus-mediawiki-programs/deploy-mediawiki/.github/actions/setup@main
         with:
           username: Xiplus
-          botname: ${{ secrets.BOT_NAME }}
-          password: ${{ secrets.BOT_PASS }}
+          botname: ${{ secrets.DEPLOY_XIPLUS_BOT_NAME }}
+          password: ${{ secrets.DEPLOY_XIPLUS_BOT_PASS }}
           family: wikipedia
           mylang: zh
 
