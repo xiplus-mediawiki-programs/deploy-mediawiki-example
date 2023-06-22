@@ -22,7 +22,7 @@ jobs:
 
       - name: Get short sha
         id: vars
-        run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+        run: echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
 
       - uses: xiplus-mediawiki-programs/deploy-mediawiki/.github/actions/deploy@main
         with:
